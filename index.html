@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pong!</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    
+	<style>
+		body {
+            background-image: url("https://cdna.artstation.com/p/assets/images/images/007/382/326/large/nastya-friday-game-background-3.jpg?1505758854");
+			overflow: hidden;
+			}
+			
+        .circle1 {
+				display: inline-block;
+				background-color: rgb(255, 255, 255, 0.5);
+				margin-top: 0;
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				border-radius: 50%;
+				overflow: hidden;
+				padding: 7px;
+				margin: 7px;
+				-webkit-animation: moveX 8.05s linear 0s infinite alternate, moveY 8.4s linear 0s infinite alternate;
+				-moz-animation: moveX 8.05s linear 0s infinite alternate, moveY 8.4s linear 0s infinite alternate;
+				-o-animation: moveX 8.05s linear 0s infinite alternate, moveY 8.4s linear 0s infinite alternate;
+				 animation: moveX 8.05s linear 0s infinite alternate, moveY 8.4s linear 0s infinite alternate;
+				}
+
+				@-webkit-keyframes moveX {from { left: 0; } to { left: 100%; }}
+				@-moz-keyframes moveX {from { left: 0; } to { left: 100%; }}
+				@-o-keyframes moveX {from { left: 0; } to { left: 100%; }}
+				@keyframes moveX { from { left: 0; } to { left: 100%; }}
+				@-webkit-keyframes moveY {from { top: 0; } to { top: 100%; }}
+				@-moz-keyframes moveY {from { top: 0; } to { top: 100%; }}
+				@-o-keyframes moveY {from { top: 0; } to { top: 100%; }}
+				@keyframes moveY {from { top: 0; } to { top: 100%; }}
+					
+        
+		container {
+			margin-left: auto;
+			margin-right: auto;
+			}
+		
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			}
+			
+		.titlepic {
+			width: 75%;
+			height: auto;
+			max-width: 600px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 70px;
+			margin-bottom: 10px;
+			}
+		
+		button {
+			color: white;
+			background-color: rgb(101,151,149);
+			border: 2px solid white;
+			font-size: 25px;
+			text-align: center;
+			width: 60%;
+			max-width: 500px;
+			border-radius: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 40px;
+			padding: 8px;
+			outline: none;
+			display: block;
+            font-family: 'Varela Round', sans-serif;
+			}
+		
+		button:hover {
+			color: #161618;
+			background-color: white;
+			transition: all 0.5s;
+			border-radius: 50px;
+			}
+			
+		
+		
+	</style>
+    </head>
+	
+	<body>
+		<div class="container">
+			<img src="pong!.png" class="titlepic" alt="title">
+		</div>
+        
+        <div class="circle1"></div>
+		<div class="container">
+			<button onclick="document.location='start.html'">START</button>
+			<button onclick="document.location='tutorial.html'">TUTORIAL</button>
+			<button onclick="document.location='developers.html'">ABOUT THE DEVELOPERS</button>
+		</div>
+	</body>
+	
+	
+</html>
